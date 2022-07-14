@@ -197,11 +197,11 @@ img{
 /* FOOTER */
 footer{
     border-top: 1px solid #ccc;
-    width: 1340px;
-    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .sitemap{
-    padding: 20px 30px 30px 35px;
+    padding: 10px;  
     display: flex;
     justify-content: space-between;
     line-height: 40px;
@@ -220,10 +220,8 @@ footer h3{
     color: #212121;
 }
 footer .sitemap-2{
-    width: 1280px;
-    margin: auto;
+    padding: 10px;
     border-top: 1px solid #ccc;
-    padding: 20px 0px;
 }
 
 .sosmed a, .policy a{
@@ -243,4 +241,24 @@ footer .sitemap-2{
 }
 .policy li{
     padding-right: 15px;
+}
+
+
+/* Responsive Breakpoint */
+
+@media (max-width: 1024px){
+    .container {
+        grid-template-areas:
+            "satu satu"
+            "dua dua"
+            "tiga tiga"
+            "empat empat"
+            "lima lima"
+            "enam enam"
+            "note note";
+        grid-template-columns: 1fr;
+    }
+    .nav-mobile{
+        display: none;
+    }
 }
